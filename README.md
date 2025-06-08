@@ -18,6 +18,7 @@ Este projeto implementa um agente de pesquisa baseado em React utilizando a bibl
 2. Instale as dependências:
    ```bash
    pip install -r requirements.txt
+   pip install -U "langgraph-cli[inmem]" 
    ```
 3. Configure as variáveis de ambiente no arquivo `.env`:
    ```env
@@ -28,7 +29,7 @@ Este projeto implementa um agente de pesquisa baseado em React utilizando a bibl
 ## Execução
 Para iniciar o agente, execute:
 ```bash
-python langgraph-101.py
+langgraph dev
 ```
 
 ## Contribuição

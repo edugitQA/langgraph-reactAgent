@@ -1,6 +1,6 @@
 from langgraph.prebuilt import create_react_agent
 from langchain_core.messages import SystemMessage
-from langchain_core.tools import Tool
+from langchain_core.tools import tool
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_community.tools.tavily_search import TavilySearchResults
 import os
