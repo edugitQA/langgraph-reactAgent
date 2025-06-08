@@ -15,12 +15,20 @@ Este projeto implementa um agente de pesquisa baseado em React utilizando a bibl
 
 ## Configuração
 1. Certifique-se de ter o Python 3.11 instalado.
-2. Instale as dependências:
+2. Crie e ative um ambiente virtual:
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   ```
+3. Instale as dependências:
    ```bash
    pip install -r requirements.txt
-   pip install -U "langgraph-cli[inmem]" 
    ```
-3. Configure as variáveis de ambiente no arquivo `.env`:
+4. **Se estiver no Windows, execute também:**
+   ```bash
+   pip install -U "langgraph-cli[inmem]"
+   ```
+5. Configure as variáveis de ambiente no arquivo `.env`:
    ```env
    API_KEY=<sua_api_key>
    TAVILY_API_KEY=<sua_tavily_api_key>
@@ -29,7 +37,7 @@ Este projeto implementa um agente de pesquisa baseado em React utilizando a bibl
 ## Execução
 Para iniciar o agente, execute:
 ```bash
-langgraph dev
+vlanggraph dev --allow-blocking
 ```
 
 ## Contribuição
